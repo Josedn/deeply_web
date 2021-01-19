@@ -1,9 +1,8 @@
 @import "../../../styles/mixins.scss";
 
 .hero {
-    height: 700px;
     width: 100%;
-    background-image: url("../../../images/bigsur.jpg");
+    background-image: url("../../../images/gradient.png");
     padding-top: 75px;
     box-sizing: border-box;
 }
@@ -12,4 +11,27 @@
     width: $deeply_desktop_width;
     display: flex;
     margin: 0 auto;
+    height: 600px;
+    align-items: center;
+}
+
+.hero__column {
+}
+
+.hero__column--left {
+    width: 630px;
+}
+
+.hero__title {
+    font-size: 94px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    line-height: 0.9em;
+}
+
+.hero__description {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 540px;
 }

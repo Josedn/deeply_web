@@ -5,11 +5,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.1);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 
     font-size: 17px;
     font-weight: 600;
     color: $stripe_white;
+    transition: 1s;
 }
 
 .header__container {
