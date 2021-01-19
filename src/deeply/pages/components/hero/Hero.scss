@@ -1,0 +1,15 @@
+@import "../../../styles/mixins.scss";
+
+.hero {
+    height: 700px;
+    width: 100%;
+    background-image: url("../../../images/bigsur.jpg");
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+
+.hero__container {
+    width: $deeply_desktop_width;
+    display: flex;
+    margin: 0 auto;
+}
