@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import './Hero.scss';
 import Phone from './phone/Phone';
-import screenshot from '../../../images/instagram1.png';
 import Gradient from '../../../styles/stripe.gradient';
+import flmsck_web from '../../../images/flmstck_web.png';
+import flmsck_app from '../../../images/flmstck_app.png';
 
 const Hero = () => {
     useEffect(() => {
         const gradient = new Gradient();
         gradient.initGradient(".gradient__canvas");
-        console.log(gradient);
     }, []);
 
     return (
@@ -35,7 +35,20 @@ const Hero = () => {
 
                 <div className="hero__column hero__column--right">
                     <div className="hero__preview-container">
-                        <Phone className="hero__preview-phone-first" background={screenshot} />
+                        <div className="preview__link-caption">one link for everything</div>
+                        <div className="preview__link-container">
+                            <a className="preview__link" target="_blank" href="/">deeply.to/fku42o</a>
+                        </div>
+                        <div className="preview__phone-container">
+                            <div className="preview__phones-column">
+                                <h4 className="preview__phones-caption">app installed</h4>
+                                <Phone className="preview__phone" background={flmsck_app} />
+                            </div>
+                            <div className="preview__phones-column">
+                                <h4 className="preview__phones-caption">app not installed</h4>
+                                <Phone className="preview__phone" background={flmsck_web} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
