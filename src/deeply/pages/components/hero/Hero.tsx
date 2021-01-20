@@ -13,11 +13,11 @@ const Hero = () => {
 
     return (
         <section className="hero">
+            <div className="hero__gradient">
+                <canvas className="gradient__canvas"></canvas>
+            </div>
             <div className="hero__container">
                 <div className="hero__column hero__column--left">
-                    <div className="hero__gradient">
-                        <canvas className="gradient__canvas"></canvas>
-                    </div>
                     <h2 className="hero__title">
                         Deep linking
                         <br></br>

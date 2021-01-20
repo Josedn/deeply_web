@@ -479,7 +479,7 @@ class Gradient {
     * Using default colors assigned below if no variables have been found after maxCssVarRetries
     */
     waitForCssVars() {
-        if (this.computedCanvasStyle && -1 !== this.computedCanvasStyle.getPropertyValue("--gradient-color-1").indexOf("#")) this.init(), this.addIsLoadedClass();
+        if (this.computedCanvasStyle && -1 !== this.computedCanvasStyle.getPropertyValue("--gradientColorZero").indexOf("#")) this.init(), this.addIsLoadedClass();
         else {
             if (this.cssVarRetries += 1, this.cssVarRetries > this.maxCssVarRetries) {
                 return this.sectionColors = [16711680, 16711680, 16711935, 65280, 255], void this.init();
@@ -491,7 +491,7 @@ class Gradient {
     * Initializes the four section colors by retrieving them from css variables.
     */
     initGradientColors() {
-        this.sectionColors = ["--gradient-color-1", "--gradient-color-2", "--gradient-color-3", "--gradient-color-4"].map(cssPropertyName => {
+        this.sectionColors = ["--gradientColorZero", "--gradientColorOne", "--gradientColorTwo", "--gradientColorThree"].map(cssPropertyName => {
             let hex = this.computedCanvasStyle.getPropertyValue(cssPropertyName).trim();
             //Check if shorthand hex value was used and double the length so the conversion in normalizeColor will work.
             if (4 === hex.length) {
