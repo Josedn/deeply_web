@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import './Hero.scss';
 import Phone from './phone/Phone';
 import Gradient from '../../../styles/stripe.gradient';
-import flmsck_web from '../../../images/flmstck_web.png';
-import flmsck_app from '../../../images/flmstck_app.png';
+import flmsck_web from '../../../images/screenshots/flmstck_web.png';
+import flmsck_app from '../../../images/screenshots/flmstck_app.png';
 
 const Hero = () => {
     useEffect(() => {

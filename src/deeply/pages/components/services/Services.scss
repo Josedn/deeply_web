@@ -2,6 +2,44 @@
 
 .services {
     width: 100%;
-    background: sienna;
+    background: snow;
     height: 300px;
+    color: $stripe_softblack;
+}
+
+.services__container {
+    width: $deeply_desktop_width;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.services__title {
+    margin: 0;
+    padding: 0;
+}
+
+.services__grid {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service__item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__item-button {
+    border: 0;
+    background: none;
+}
+
+.service__item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
