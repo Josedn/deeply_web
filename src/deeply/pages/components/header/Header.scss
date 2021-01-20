@@ -50,8 +50,7 @@
     margin: 0;
     padding: 0;
 }
-.navigator__button,
-.options__button {
+.navigator__button {
     background: none;
     color: inherit;
     font-family: inherit;
@@ -66,11 +65,21 @@
 }
 
 .options__button {
-    border-radius: 16.5px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    border: none;
+
+    border-radius: 16px;
     padding: 5px 20px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
+}
+
+.options__button:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .options__button-icon {
