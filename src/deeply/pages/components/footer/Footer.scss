@@ -1,0 +1,12 @@
+@import "../../../styles/mixins.scss";
+
+.footer {
+    width: 100%;
+    background-color: $stripe_blue_title;
+    color: $stripe_white;
+
+}
+
+.footer__container {
+    width: 1050px;
+}
