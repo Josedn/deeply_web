@@ -4,7 +4,22 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container">
-                &copy; 2021
+                <div className="footer__column">
+                    <h1 className="footer__logo">
+                        <a className="footer__logo-link" href="/">deeply</a>
+                    </h1>
+                    <p className="footer__copyright-disclaimer">
+                        &copy; 2021 - made with love by filmstock, co
+                    </p>
+                </div>
+                <div className="footer__column footer__column--links">
+                    <div>
+                        <a className="footer__link" href="/contact">contact</a>
+                        <a className="footer__link" href="/privacy">privacy</a>
+                        <a className="footer__link" href="/faqs">faqs</a>
+                        <a className="footer__link" href="/pricing">pricing</a>
+                    </div>
+                </div>
             </div>
         </footer>
     );

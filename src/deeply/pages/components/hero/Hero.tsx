@@ -24,7 +24,7 @@ const Hero = () => {
                         made easy
                     </h2>
                     <div className="hero__description">
-                        Deep link into any app from any campaig. No SDK required
+                        Deep link into any app from any campaign. No SDK required
                     </div>
                     <footer className="hero__footer">
                         <button className="hero__button">
