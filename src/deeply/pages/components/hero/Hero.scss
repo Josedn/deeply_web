@@ -69,6 +69,7 @@
     font-weight: 600;
     line-height: 0.9em;
     letter-spacing: -6px;
+    color: $stripe_blue_title;
 }
 
 .hero__description {
@@ -81,21 +82,22 @@
 }
 
 .hero__button {
-    color: inherit;
+    color: $stripe_white;
     font-family: inherit;
-    font-weight: inherit;
+    font-weight: 600;
     font-size: inherit;
     border: none;
+    cursor: pointer;
 
     border-radius: 16px;
     padding: 5px 20px;
-    background: $stripe_softwhite;
+    background: $stripe_blue_title;
     display: flex;
     align-items: center;
 }
 
 .hero__button:hover {
-    background: $stripe_softwhite_active;
+    background-color: $stripe_blue_title_hover;
 }
 
 .hero__button-icon {

@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import './Hero.scss';
 import Phone from './phone/Phone';
-import Gradient from '../../../styles/stripe.gradient';
+//import Gradient from '../../../styles/stripe.gradient';
 import flmsck_web from '../../../images/screenshots/flmstck_web.jpg';
 import flmsck_app from '../../../images/screenshots/flmstck_app.jpg';
 
 const Hero = () => {
     useEffect(() => {
-        const gradient = new Gradient();
-        gradient.initGradient(".gradient__canvas");
+        //const gradient = new Gradient();
+        //gradient.initGradient(".gradient__canvas");
     }, []);
 
     return (
@@ -24,7 +24,7 @@ const Hero = () => {
                         made easy
                     </h2>
                     <div className="hero__description">
-                        Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.
+                        Deep link into any app from any campaig. No SDK required
                     </div>
                     <footer className="hero__footer">
                         <button className="hero__button">
