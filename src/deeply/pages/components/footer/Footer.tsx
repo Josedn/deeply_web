@@ -9,7 +9,7 @@ const Footer = () => {
                         <a className="footer__logo-link" href="/">deeply</a>
                     </h1>
                     <p className="footer__copyright-disclaimer">
-                        &copy; 2021 - made with love by filmstock, co
+                        &copy; 2021 - made with love by <a className="footer__link" href="https://filmstock.tv" rel="noreferrer" target="_blank">filmstock, co</a>
                     </p>
                 </div>
                 <div className="footer__column footer__column--links">
