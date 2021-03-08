@@ -41,6 +41,11 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 3px 2px 3px 0px #aaaaaa;
+    transition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.service__item:hover .service__item-button {
+    background: #cccccc;
 }
 
 .service__item-image {
