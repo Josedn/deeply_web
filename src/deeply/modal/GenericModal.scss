@@ -1,0 +1,18 @@
+@import "../styles/mixins.scss";
+
+.modal {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.modal-container {
+    position: absolute;
+    top: 20px;
+    width: 960px;
+    height: 500px;
+    background: blanchedalmond;
+}
