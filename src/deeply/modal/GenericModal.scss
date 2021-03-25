@@ -1,5 +1,8 @@
 @import "../styles/mixins.scss";
 
+$genius_background: #ffffff;
+$genius_background_alt: #f2f6f6;
+
 .modal__overlay {
     position: absolute;
     width: 100%;
@@ -7,23 +10,28 @@
     z-index: 20;
     height: 100vh;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal__container {
-    position: absolute;
-    top: 20px;
     width: 960px;
     height: 500px;
-    background: blanchedalmond;
+    background: $genius_background;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .modal__header {
-    background: salmon;
     width: 100%;
     height: 70px;
     position: relative;
+    border-bottom: 1px solid $genius_background_alt;
+    box-sizing: border-box;
 }
 
 .modal__title {
@@ -36,25 +44,58 @@
 
 .modal__close {
     position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-    height: 24px;
+    top: 50%;
+    right: 24px;
     cursor: pointer;
+    background: inherit;
+    border: none;
+    padding: 0 0.5em;
+    color: #000000;
+    font-size: 24px;
+    transform: translate(0, -50%);
+}
+
+.modal__close:hover {
+    color: #aaaaaa;
 }
 
 .modal__content {
     width: 100%;
-    background: cyan;
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
 }
 
+////// nav
 .app-list__column-left {
-    background: red;
-    width: 30%;
+    background: $genius_background_alt;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    //display: flex;
+    //flex-direction: column;
 }
 
+.app-list__title {
+    margin: 0;
+}
+
+.app-list__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-list__list-item {
+}
+
+///// content
 .app-list__column-right {
-    background: blue;
-    width: 70%;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.app-content__title {
+    margin: 0;
 }
