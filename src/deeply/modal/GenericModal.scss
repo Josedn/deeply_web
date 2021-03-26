@@ -231,3 +231,23 @@ $genius_text: $stripe_softblack;
     opacity: $stripe_hover_opacity;
     font-weight: 600;
 }
+
+// devices
+.app-content__preview-devices {
+    margin-top: 24px;
+}
+
+.app-content__preview-devices-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.app-content__preview-devices-item {
+    background: $genius_background_alt;
+    float: left;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}

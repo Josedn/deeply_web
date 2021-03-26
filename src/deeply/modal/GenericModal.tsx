@@ -101,6 +101,14 @@ const ModalContent: React.FC = (props) => {
                             <div className="app-content__preview-title">URL format</div>
                             <div className="app-content__preview-content">instagram.com/<span className="app-content__preview-highlight">&lt;profile&gt;</span></div>
                         </div>
+                        <div className="app-content__preview-devices">
+                            Works with:
+                            <ul className="app-content__preview-devices-list">
+                                <li className="app-content__preview-devices-item"><i className="fab fa-android"></i> Android </li>
+                                <li className="app-content__preview-devices-item"><i className="fab fa-apple"></i> iOS </li>
+                                <li className="app-content__preview-devices-item"><i className="fab fa-chrome"></i> Web </li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </section>
