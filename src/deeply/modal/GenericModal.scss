@@ -2,14 +2,15 @@
 
 $genius_background: #ffffff;
 $genius_background_alt: #f0f0f6;
+$genius_background_hover: #e3e3f3;
+$genius_background_overlay: rgba(0, 0, 0, 0.5);
 $genius_title: $stripe_blue_title;
 $genius_text: $stripe_softblack;
-$genius_link: $stripe_blue_subtitle;
 
 .modal__overlay {
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $genius_background_overlay;
     z-index: 20;
     height: 100vh;
     overflow-y: hidden;
@@ -71,11 +72,11 @@ $genius_link: $stripe_blue_subtitle;
     color: $genius_text;
 }
 
-////// nav
+// nav
 .app-list__column-left {
     background: $genius_background_alt;
     width: 25%;
-    padding: 20px;
+    padding: 35px 20px;
     box-sizing: border-box;
 }
 
@@ -86,12 +87,13 @@ $genius_link: $stripe_blue_subtitle;
     text-transform: uppercase;
     padding: 0 10px;
     color: $genius_title;
+    font-size: 12px;
 }
 
 .app-list__list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .app-list__list-item {
@@ -111,7 +113,7 @@ $genius_link: $stripe_blue_subtitle;
 }
 
 .app-list__list-button:not(.app-list__list-button--selected):hover {
-    background: #e3e3f3;
+    background: $genius_background_hover;
 }
 
 .app-list__list-button--selected {
@@ -119,14 +121,113 @@ $genius_link: $stripe_blue_subtitle;
     background: $stripe_blue_accent;
 }
 
-///// content
+// content
 .app-list__column-right {
     flex: 1 1 auto;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 35px 60px;
+}
+
+.app-content__go-back-container {
+    color: $genius_title;
+}
+
+.app-content__go-back-icon {
+    font-size: 0.9em;
+}
+
+// header
+.app-content__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .app-content__title {
     margin: 0;
     color: $genius_title;
+    text-transform: uppercase;
+    margin-left: 12px;
+    font-size: 24px;
+}
+
+.app-content__image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.app-content__subtitle {
+    margin-top: 24px;
+    font-size: 18px;
+}
+
+// options
+.app-content__options {
+    margin-top: 24px;
+}
+
+.app-content__type-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.app-content__type-item {
+    float: left;
+    margin-right: 10px;
+}
+
+.app-content__type-button {
+    background: $genius_background_hover;
+    padding: 5px 10px;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    color: inherit;
+}
+
+.app-content__type-button:not(.app-content__type-button--selected):hover {
+    opacity: $stripe_hover_opacity;
+}
+
+.app-content__type-button--selected {
+    color: $stripe_white;
+    background: $stripe_blue_accent;
+}
+
+// preview
+.app-content__preview {
+    margin-top: 24px;
+}
+
+.app-content__preview-box {
+    display: flex;
+    align-items: center;
+    background: $genius_background_hover;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.app-content__preview-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 2px;
+    color: $genius_title;
+}
+
+.app-content__preview-content {
+    margin-left: 18px;
+    font-family: $deeply_courier;
+}
+
+.app-content__preview-highlight {
+    color: $stripe_blue_title;
+    opacity: $stripe_hover_opacity;
+    font-weight: 600;
 }
