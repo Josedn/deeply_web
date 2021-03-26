@@ -30,10 +30,24 @@ const ModalContent: React.FC = (props) => {
                     </h4>
                     <ul className="app-list__list">
                         <li className="app-list__list-item">
-                            Instagram
+                            <button className="app-list__list-button">
+                                Instagram
+                            </button>
                         </li>
                         <li className="app-list__list-item">
-                            Facebook
+                            <button className="app-list__list-button app-list__list-button--selected">
+                                Facebook
+                            </button>
+                        </li>
+                        <li className="app-list__list-item">
+                            <button className="app-list__list-button">
+                                YouTube
+                            </button>
+                        </li>
+                        <li className="app-list__list-item">
+                            <button className="app-list__list-button">
+                                Spotify
+                            </button>
                         </li>
                     </ul>
                 </div>

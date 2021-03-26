@@ -1,7 +1,10 @@
 @import "../styles/mixins.scss";
 
 $genius_background: #ffffff;
-$genius_background_alt: #f2f6f6;
+$genius_background_alt: #f0f0f6;
+$genius_title: $stripe_blue_title;
+$genius_text: $stripe_softblack;
+$genius_link: $stripe_blue_subtitle;
 
 .modal__overlay {
     position: absolute;
@@ -32,6 +35,7 @@ $genius_background_alt: #f2f6f6;
     position: relative;
     border-bottom: 1px solid $genius_background_alt;
     box-sizing: border-box;
+    color: $genius_title;
 }
 
 .modal__title {
@@ -50,13 +54,13 @@ $genius_background_alt: #f2f6f6;
     background: inherit;
     border: none;
     padding: 0 0.5em;
-    color: #000000;
+    color: inherit;
     font-size: 24px;
     transform: translate(0, -50%);
 }
 
 .modal__close:hover {
-    color: #aaaaaa;
+    opacity: $stripe_hover_opacity;
 }
 
 .modal__content {
@@ -64,6 +68,7 @@ $genius_background_alt: #f2f6f6;
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
+    color: $genius_text;
 }
 
 ////// nav
@@ -72,12 +77,15 @@ $genius_background_alt: #f2f6f6;
     width: 25%;
     padding: 20px;
     box-sizing: border-box;
-    //display: flex;
-    //flex-direction: column;
 }
 
 .app-list__title {
     margin: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: $genius_title;
 }
 
 .app-list__list {
@@ -87,6 +95,28 @@ $genius_background_alt: #f2f6f6;
 }
 
 .app-list__list-item {
+    margin-bottom: 5px;
+}
+
+.app-list__list-button {
+    background: none;
+    padding: 5px 10px;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.app-list__list-button:not(.app-list__list-button--selected):hover {
+    background: #e3e3f3;
+}
+
+.app-list__list-button--selected {
+    color: $stripe_white;
+    background: $stripe_blue_accent;
 }
 
 ///// content
@@ -98,4 +128,5 @@ $genius_background_alt: #f2f6f6;
 
 .app-content__title {
     margin: 0;
+    color: $genius_title;
 }
