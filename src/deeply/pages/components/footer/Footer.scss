@@ -8,7 +8,7 @@
     color: $stripe_white;
 
     &__container {
-        width: 1050px;
+        width: $deeply_desktop_width;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
