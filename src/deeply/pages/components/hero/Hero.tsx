@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import './Hero.scss';
 import Phone from './phone/Phone';
-//import Gradient from '../../../styles/stripe.gradient';
+import Gradient from '../../../styles/stripe.gradient';
 import flmsck_web from '../../../images/screenshots/flmstck_web.jpg';
 import flmsck_app from '../../../images/screenshots/flmstck_app.jpg';
 
 const Hero = () => {
     useEffect(() => {
-        //const gradient = new Gradient();
-        //gradient.initGradient(".gradient__canvas");
+        const gradient = new Gradient();
+        gradient.initGradient(".gradient__canvas");
     }, []);
 
     return (
@@ -20,11 +20,9 @@ const Hero = () => {
                 <div className="hero__column hero__column--left">
                     <h2 className="hero__title">
                         Deep linking
-                        <br></br>
-                        made easy
                     </h2>
                     <div className="hero__description">
-                        Deep link into any app from any campaign. No SDK required
+                        Boost conversions through seamless user experiences
                     </div>
                     <footer className="hero__footer">
                         <button className="hero__button">

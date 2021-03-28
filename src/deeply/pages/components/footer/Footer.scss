@@ -4,7 +4,7 @@
     padding: 25px 0;
     width: 100%;
     background: $stripe_blue_accent;
-    background: linear-gradient(90deg, rgba(12,46,78,1) 0%, rgba(10,37,64,1) 100%);
+    background: linear-gradient(90deg, $stripe_blue_accent 0%, $stripe_blue_title 100%);
     color: $stripe_white;
 
     &__container {
