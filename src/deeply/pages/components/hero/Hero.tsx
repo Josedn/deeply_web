@@ -22,7 +22,7 @@ const Hero = () => {
                         Deep linking
                     </h2>
                     <div className="hero__description">
-                        Boost conversions through seamless user experiences
+                        Open apps directly from your links
                     </div>
                     <footer className="hero__footer">
                         <button className="hero__button">
@@ -33,10 +33,10 @@ const Hero = () => {
 
                 <div className="hero__column hero__column--right">
                     <div className="hero__preview-container">
-                        <div className="preview__link-caption">one link for everything</div>
+                        {/*<div className="preview__link-caption">one link for everything</div>
                         <div className="preview__link-container">
                             <a className="preview__link" target="_blank" href="/">deeply.to/fku42o</a>
-                        </div>
+                        </div>*/}
                         <div className="preview__phone-container">
                             <div className="preview__phones-column">
                                 <h4 className="preview__phones-caption">app installed</h4>
